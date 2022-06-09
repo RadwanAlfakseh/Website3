@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta>
+        <title>Welcome To The Website</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <img src="images/logo.png" class="logo">
+                <div class="header-text">
+                    <h1>This is a Test Project for Web <br> Design purpouses only.</h1>
+                    <span class="square"></span>
+                    <p>here are many variations of passages of Lorem Ipsum available,
+                         but the majority <br> have suffered alteration in some form,
+                          by injected humour, or randomised words<br> which don't look even
+                           slightly believable.
+                         <br>If you are going to use a passage of Lorem Ipsum</p>
+                         <button class="common-btn">Read more</button>
+                         <div class="line">
+                             <span class="line-1"></span><br>
+                             <span class="line-2"></span><br>
+                             <span class="line-3"></span>
+                         </div>
+                </div>
+            </div>
+        </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">OFFER</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menuBtn">
+
+        <!-- about -->
+        <section id="about">
+            <div class="about-left-col">
+                <img src="images/about.png">
+            </div>
+            <div class="about-right-col">
+                <div class="about-text">
+                    <h1>ABOUT US</h1>
+                    <span class="square"></span>
+                    <p>Here are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form,
+                         by injected humour, or randomised words which don't look even
+                          slightly believable.</p><br><br>
+                          <div class="line">
+                            <span class="line-1"></span><br>
+                            <span class="line-2"></span><br>
+                            <span class="line-3"></span>
+                        </div>
+                          <h2>"he majority have suffered alteration in some form,
+                            by injected humour"</h2>
+                            <h3>---- Side Project</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Features -->
+
+        <section id="features" class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </section>
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+            sideNav.style.right = "-250px";
+            menuBtn.onmouseenter = function () {
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0px";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                }
+            }
+            sideNav.onmouseleave = function () {
+                if(sideNav.style.right == "0px"){
+                    sideNav.style.right = "-250px";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
